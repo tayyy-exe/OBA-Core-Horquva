@@ -6,6 +6,8 @@ import { Sidebar } from '@/components/layout/Sidebar';
 import { useAuth } from '@/lib/AuthContext';
 import GlobalNotificationPanel from '@/components/global/GlobalNotificationPanel';
 import GlobalSearchOverlay from '@/components/global/GlobalSearchOverlay';
+import AgentPanel from '@/components/agent/AgentPanel';
+
 
 const AUTH_ROUTES = ['/login', '/signup', '/forgot-password'];
 
@@ -33,15 +35,21 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <div className="flex h-full">
-      <Sidebar />
-      <div className="flex flex-1 flex-col min-w-0 overflow-hidden relative">
-        <main className="flex-1 overflow-y-auto p-6 lg:p-8">{children}</main>
-      </div>
-      <GlobalNotificationPanel />
-      <GlobalSearchOverlay />
+  <div className="flex h-full">
+    <Sidebar />
+
+    <div className="flex flex-1 min-w-0 overflow-hidden relative">
+      <main className="flex-1 overflow-y-auto p-6 lg:p-8">
+        {children}
+      </main>
+
+      <AgentPanel />
     </div>
-  );
+
+    <GlobalNotificationPanel />
+    <GlobalSearchOverlay />
+  </div>
+);
 }
 
 export default AppShell;
