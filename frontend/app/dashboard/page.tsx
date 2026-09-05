@@ -1,15 +1,15 @@
 'use client';
 
-import { KpiStrip } from '../components/dashboard/KpiStrip';
-import { Heatmap } from '../components/dashboard/Heatmap';
-import { RiskSplit } from '../components/dashboard/RiskSplit';
-import { AgentTable } from '../components/dashboard/AgentTable';
-import { VerdictBanner } from '../components/dashboard/VerdictBanner';
-import { FivePillarsRadar } from '../components/dashboard/FivePillarsRadar';
-import { DailyBriefingCard } from '../components/dashboard/DailyBriefingCard';
-import { WhatMattersNowFeed } from '../components/dashboard/WhatMattersNowFeed';
-import { ExecutiveMemoryPanel } from '../components/dashboard/ExecutiveMemoryPanel';
-import { EarlyWarningStrip } from '../components/dashboard/EarlyWarningStrip';
+import { KpiStrip } from '../../components/dashboard/KpiStrip';
+import { Heatmap } from '../../components//dashboard/Heatmap';
+import { RiskSplit } from '../../components/dashboard/RiskSplit';
+import { AgentTable } from '../../components/dashboard/AgentTable';
+import { VerdictBanner } from '../../components/dashboard/VerdictBanner';
+import { FivePillarsRadar } from '../../components/dashboard/FivePillarsRadar';
+import { DailyBriefingCard } from '../../components/dashboard/DailyBriefingCard';
+import { WhatMattersNowFeed } from '../../components/dashboard/WhatMattersNowFeed';
+import { ExecutiveMemoryPanel } from '../../components/dashboard/ExecutiveMemoryPanel';
+import { EarlyWarningStrip } from '../../components/dashboard/EarlyWarningStrip';
 
 export default function DashboardPage() {
   return (
