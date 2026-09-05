@@ -1,7 +1,7 @@
 'use client';
 
 import { KpiStrip } from '../../components/dashboard/KpiStrip';
-import { Heatmap } from '../../components//dashboard/Heatmap';
+import { Heatmap } from '../../components/dashboard/Heatmap';
 import { RiskSplit } from '../../components/dashboard/RiskSplit';
 import { AgentTable } from '../../components/dashboard/AgentTable';
 import { VerdictBanner } from '../../components/dashboard/VerdictBanner';
